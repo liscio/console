@@ -1,8 +1,6 @@
 extension ConsoleProtocol {
-    /**
-        Requests yes/no confirmation from
-        the console.
-    */
+    /// Requests yes/no confirmation from
+    /// the console.
     public func confirm(_ prompt: String, style: ConsoleStyle = .info) -> Bool {
         var i = 0
         var result = ""

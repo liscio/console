@@ -9,14 +9,15 @@ public struct Value: Argument {
 }
 
 extension Command {
-    public func value(_ name: String, from arguments: [String]) throws -> String {
+    public func value(_ name: String) throws -> String {
         for (i, value) in signature.values.enumerated() {
             if value.name == name {
-                return arguments[i]
+                return console.arguments.values[console.valueOffset + i]
             }
         }
 
         throw ConsoleError.argumentNotFound
     }
 }
+
 

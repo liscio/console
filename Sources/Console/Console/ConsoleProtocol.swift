@@ -159,8 +159,4 @@ extension ConsoleProtocol {
         let microseconds = seconds * Double(factor)
         usleep(useconds_t(microseconds))
     }
-
-    public var confirmOverride: Bool? {
-        return nil
-    }
 }

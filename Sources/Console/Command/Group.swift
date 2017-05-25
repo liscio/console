@@ -1,4 +1,4 @@
-public class Group: Runnable {
+/*public class Group: Runnable {
     public var id: String
     public var commands: [Runnable]
     public var help: [String]
@@ -10,4 +10,4 @@ public class Group: Runnable {
         self.help = help
         self.fallback = fallback
     }
-}
+}*/
